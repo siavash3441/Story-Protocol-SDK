@@ -14,7 +14,13 @@ if ! [ -x "$(command -v git)" ]; then
     sudo apt-get update && sudo apt-get install git -y
 else
     show "Git is already installed."
+fi
 
+show "Installing npm..."
+source <(wget -O - https://raw.githubusercontent.com/zunxbt/installation/main/node.sh)
+
+
+fi
 
 show "Cloning Story repository..."
 git clone https://github.com/zunxbt/Story-Protocol.git && cd Story-Protocol
