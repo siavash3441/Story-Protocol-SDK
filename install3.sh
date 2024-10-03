@@ -15,6 +15,7 @@ if ! [ -x "$(command -v git)" ]; then
 else
     show "Git is already installed."
 
+
 show "Cloning Story repository..."
 git clone https://github.com/zunxbt/Story-Protocol.git && cd Story-Protocol
 
