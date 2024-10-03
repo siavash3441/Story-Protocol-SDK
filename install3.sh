@@ -1,26 +1,3 @@
-#!/bin/bash
-
-curl -s https://raw.githubusercontent.com/zunxbt/logo/main/logo.sh | bash
-sleep 3
-
-show() {
-    echo
-    echo -e "\e[1;34m$1\e[0m"
-    echo
-}
-
-if ! [ -x "$(command -v git)" ]; then
-    show "Git is not installed. Installing git..."
-    sudo apt-get update && sudo apt-get install git -y
-else
-    show "Git is already installed."
-
-show "Installing npm..."
-source <(wget -O - https://raw.githubusercontent.com/zunxbt/installation/main/node.sh)
-
-show "Cloning Story repository..."
-git clone https://github.com/zunxbt/Story-Protocol.git && cd Story-Protocol
-
 show "Installing npm dependencies..."
 npm install
 echo
