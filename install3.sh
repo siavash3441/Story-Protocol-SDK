@@ -19,9 +19,9 @@ fi
 show "Installing npm..."
 source <(wget -O - https://raw.githubusercontent.com/zunxbt/installation/main/node.sh)
 
-if [ -d "Story-Protocooool" ]; then
+if [ -d "Story-Protocool" ]; then
     show "Removing existing Story directory..."
-    rm -rf Story-Protocooool
+    rm -rf Story-Protocool
 fi
 
 show "Cloning Story repository..."
