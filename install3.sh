@@ -14,7 +14,6 @@ if ! [ -x "$(command -v git)" ]; then
     sudo apt-get update && sudo apt-get install git -y
 else
     show "Git is already installed."
-fi
 
 show "Installing npm..."
 source <(wget -O - https://raw.githubusercontent.com/zunxbt/installation/main/node.sh)
